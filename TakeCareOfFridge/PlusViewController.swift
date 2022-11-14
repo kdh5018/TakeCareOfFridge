@@ -18,7 +18,6 @@ class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIIm
     }
     
     
-    
     // 음식 추가 창 끄기
     @IBAction func closeButton(_ sender: UIButton) {
         dismiss(animated: true)

@@ -74,11 +74,11 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-o6-S82">
-                                <rect key="frame" x="225" y="57" width="150" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-o6-S82" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                <rect key="frame" x="225" y="57" width="150" height="60"/>
                                 <color key="backgroundColor" red="0.65098039215686276" green="0.8901960784313725" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="MzM-2b-g7O"/>
+                                    <constraint firstAttribute="height" constant="60" id="MzM-2b-g7O"/>
                                     <constraint firstAttribute="width" constant="150" id="jSr-A4-t3Q"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -97,6 +97,11 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="4DO-FC-PEb" kind="presentation" modalPresentationStyle="fullScreen" id="8tm-2t-oEC"/>
                                 </connections>
@@ -142,7 +147,7 @@
                                     <action selector="closeButton:" destination="4DO-FC-PEb" eventType="touchUpInside" id="o88-qW-Hu5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-9z-f4b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-9z-f4b" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
                                 <rect key="frame" x="120" y="267" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -154,6 +159,11 @@
                                 <state key="normal" title="음식사진 추가하기🥨">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="foodImageButton:" destination="4DO-FC-PEb" eventType="touchUpInside" id="Jjn-Oe-Dv1"/>
                                 </connections>
@@ -179,6 +189,11 @@
             <point key="canvasLocation" x="616.92307692307691" y="-65.402843601895725"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="HHp-o6-S82">
+            <size key="intrinsicContentSize" width="142.33333333333334" height="40.666666666666664"/>
+        </designable>
+    </designables>
     <resources>
         <image name="스크린샷 2022-11-14 오후 4.36.24" width="187" height="197"/>
         <systemColor name="labelColor">
