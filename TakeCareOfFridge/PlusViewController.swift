@@ -18,15 +18,6 @@ class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIIm
     
     struct Food {
         
-        lazy var foodImage: UIImage? = {
-            // 이름이 없다면, 시스템 사람이미지 셋팅
-            guard let foodCategory = foodCategory else {
-                return UIImage(systemName: "person")
-            }
-            // 해당이름으로된 이미지가 없다면, 시스템 사람이미지 셋팅
-            return UIImage(named: "\(foodCategory).png") ?? UIImage(systemName: "person")
-        }()
-        
         static var foodNumbers: Int = 0
         let foodID: Int!
         var foodCategory: String?
