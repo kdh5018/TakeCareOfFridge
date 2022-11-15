@@ -8,13 +8,58 @@
 import UIKit
 import PhotosUI
 
-class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
     
     @IBOutlet weak var foodImage: UIImageView!
+    
+    @IBOutlet weak var foodCategoryButton: UIButton!
 
+    
+    
+    struct Food {
+        
+        lazy var foodImage: UIImage? = {
+            // 이름이 없다면, 시스템 사람이미지 셋팅
+            guard let foodCategory = foodCategory else {
+                return UIImage(systemName: "person")
+            }
+            // 해당이름으로된 이미지가 없다면, 시스템 사람이미지 셋팅
+            return UIImage(named: "\(foodCategory).png") ?? UIImage(systemName: "person")
+        }()
+        
+        static var foodNumbers: Int = 0
+        let foodID: Int!
+        var foodCategory: String?
+        var foodDate: String
+        
+        init( foodCategory: String!, foodDate: String!) {
+            
+            self.foodID = Food.foodNumbers == 0 ? 0 : Food.foodNumbers
+            
+//            self.foodImage = foodImage
+            self.foodCategory = foodCategory
+            self.foodDate = foodDate
+            
+            Food.foodNumbers += 1
+        }
+    }
+    
+    var foodList: [Food] = []
+    
+    func getFoodList() -> [Food] {
+        return foodList
+    }
+    func makeNewFood(_ food: Food) {
+        foodList.append(food)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 음식 카테고리 설정
+        setFoodCategory()
+        
     }
     
     
@@ -40,6 +85,12 @@ class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIIm
         
         self.present(alert, animated: true)
     }
+    
+    @IBAction func saveFood(_ sender: UIButton) {
+        
+    }
+    
+    
     
     // 사진 추가
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
@@ -84,6 +135,23 @@ class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIIm
         let picker = PHPickerViewController(configuration: configuration)
         picker.delegate = self
         self.present(picker, animated: true, completion: nil)
+    }
+    
+    func setFoodCategory() {
+        let optionClosuer = {(action : UIAction) in print(action.title)}
+        
+        foodCategoryButton.menu = UIMenu(children : [
+            UIAction(title: "음식 카테고리🍭", state: .on, handler: optionClosuer),
+            UIAction(title: "냉동/간편🥟", handler: optionClosuer),
+            UIAction(title: "육류🥩", handler: optionClosuer),
+            UIAction(title: "유제품🥛", handler: optionClosuer),
+            UIAction(title: "채소🥬", handler: optionClosuer),
+            UIAction(title: "유제품🥛", handler: optionClosuer),
+            UIAction(title: "반찬🧆", handler: optionClosuer),
+            UIAction(title: "기타", handler: optionClosuer)])
+        
+        foodCategoryButton.showsMenuAsPrimaryAction = true
+        foodCategoryButton.changesSelectionAsPrimaryAction = true
     }
     
 }

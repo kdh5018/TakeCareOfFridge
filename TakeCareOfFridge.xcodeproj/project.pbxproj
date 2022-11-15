@@ -16,7 +16,6 @@
 		7669E6EB29221992002F6D73 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669E6EA29221992002F6D73 /* TableViewCell.swift */; };
 		7669E6ED29221C89002F6D73 /* BMDOHYEON_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7669E6EC29221C71002F6D73 /* BMDOHYEON_otf.otf */; };
 		7669E6EF29221F82002F6D73 /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669E6EE29221F82002F6D73 /* PlusViewController.swift */; };
-		7669E6F1292259FF002F6D73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7669E6F0292259FF002F6D73 /* README.md */; };
 		7669E6F329225F24002F6D73 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669E6F229225F24002F6D73 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		7669E6EA29221992002F6D73 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7669E6EC29221C71002F6D73 /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
 		7669E6EE29221F82002F6D73 /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
-		7669E6F0292259FF002F6D73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7669E6F229225F24002F6D73 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +75,6 @@
 				7669E6DF2922169A002F6D73 /* Assets.xcassets */,
 				7669E6E12922169A002F6D73 /* LaunchScreen.storyboard */,
 				7669E6E42922169A002F6D73 /* Info.plist */,
-				7669E6F0292259FF002F6D73 /* README.md */,
 			);
 			path = TakeCareOfFridge;
 			sourceTree = "<group>";
@@ -142,7 +139,6 @@
 			files = (
 				7669E6E32922169A002F6D73 /* LaunchScreen.storyboard in Resources */,
 				7669E6ED29221C89002F6D73 /* BMDOHYEON_otf.otf in Resources */,
-				7669E6F1292259FF002F6D73 /* README.md in Resources */,
 				7669E6E02922169A002F6D73 /* Assets.xcassets in Resources */,
 				7669E6DE29221699002F6D73 /* Main.storyboard in Resources */,
 			);
@@ -314,7 +310,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,7 +341,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
