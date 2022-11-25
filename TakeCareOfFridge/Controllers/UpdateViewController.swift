@@ -1,50 +1,21 @@
 //
-//  PlusViewController.swift
+//  UpdateViewController.swift
 //  TakeCareOfFridge
 //
-//  Created by 김도훈 on 2022/11/14.
+//  Created by 김도훈 on 2022/11/25.
 //
 
 import UIKit
 import PhotosUI
 
-class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
+class UpdateViewController: UIViewController, PHPickerViewControllerDelegate, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
     
     @IBOutlet weak var foodImage: UIImageView!
     
     @IBOutlet weak var foodCategoryButton: UIButton!
 
+ 
     
-    
-    struct Food {
-        
-        static var foodNumbers: Int = 0
-        let foodID: Int!
-        var foodCategory: String?
-        var foodDate: String
-        
-        init( foodCategory: String!, foodDate: String!) {
-            
-            self.foodID = Food.foodNumbers == 0 ? 0 : Food.foodNumbers
-            
-//            self.foodImage = foodImage
-            self.foodCategory = foodCategory
-            self.foodDate = foodDate
-            
-            Food.foodNumbers += 1
-        }
-    }
-    
-    var foodList: [Food] = []
-    
-    func getFoodList() -> [Food] {
-        return foodList
-    }
-    func makeNewFood(_ food: Food) {
-        foodList.append(food)
-    }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,14 +23,22 @@ class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIIm
         setFoodCategory()
         
     }
+    // MARK: DatePikcer String 형변환
+    @IBAction func foodDate(_ sender: UIDatePicker) {
+        let pickedDate = sender.date
+        let today = DateFormatter()
+        today.dateFormat = "yyyy년 MM월 dd일"
+        let resultDate = today.string(from: pickedDate)
+        print(resultDate)
+        
+    }
     
-    
-    // 음식 추가 창 끄기
+    // MARK: 음식 수정 창 끄기
     @IBAction func closeButton(_ sender: UIButton) {
         dismiss(animated: true)
     }
     
-    // 사진 추가 버튼
+    // MARK: 사진 추가 버튼
     @IBAction func foodImageButton(_ sender: UIButton) {
         let alert = UIAlertController(title: "사진 불러오기", message: "사진을 불러옵니다", preferredStyle: .actionSheet)
         let actionAlbum = UIAlertAction(title: "앨범에서 불러오기", style: .default, handler: { action in
@@ -77,7 +56,8 @@ class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIIm
         self.present(alert, animated: true)
     }
     
-    @IBAction func saveFood(_ sender: UIButton) {
+    // MARK: 음식 수정 버튼
+    @IBAction func updateFood(_ sender: UIButton) {
         
     }
     
@@ -137,7 +117,6 @@ class PlusViewController: UIViewController, PHPickerViewControllerDelegate, UIIm
             UIAction(title: "육류🥩", handler: optionClosuer),
             UIAction(title: "유제품🥛", handler: optionClosuer),
             UIAction(title: "채소🥬", handler: optionClosuer),
-            UIAction(title: "유제품🥛", handler: optionClosuer),
             UIAction(title: "반찬🧆", handler: optionClosuer),
             UIAction(title: "기타", handler: optionClosuer)])
         

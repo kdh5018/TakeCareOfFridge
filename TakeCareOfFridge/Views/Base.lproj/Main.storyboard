@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BMDOHYEON_otf.otf">
+            <string>BMDoHyeon-OTF</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TakeCareOfFridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3BW-5L-g9v">
+                                <rect key="frame" x="15" y="147" width="360" height="588"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="197" id="gb5-fc-ev7" customClass="TableViewCell" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="360" height="197"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gb5-fc-ev7" id="Ukt-fN-SPj">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="197"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="4oQ-OP-lgY">
+                                                    <rect key="frame" x="30" y="11.666666666666671" width="300" height="174"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-cd-LO3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b2J-i5-KMe">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="120" id="6Fa-2l-tVM"/>
+                                                                        <constraint firstAttribute="height" constant="120" id="6aR-4t-S59"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nFg-vy-wn9">
+                                                                    <rect key="frame" x="185" y="0.0" width="115" height="120"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO3-DX-F7m">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="115" height="52.333333333333336"/>
+                                                                            <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbx-nA-kfR">
+                                                                            <rect key="frame" x="0.0" y="67.333333333333329" width="115" height="52.666666666666671"/>
+                                                                            <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="120" id="DIy-DR-RbY"/>
+                                                                        <constraint firstAttribute="width" constant="120" id="RQP-7S-cZb"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="1vY-pC-NxY">
+                                                            <rect key="frame" x="0.0" y="139" width="300" height="35"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf0-EO-bce" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="111.66666666666667" height="35"/>
+                                                                    <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="3pi-Mn-Bf3"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="15"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="수정하기">
+                                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <segue destination="6vk-Zg-y9j" kind="presentation" modalPresentationStyle="fullScreen" id="fFM-q7-fyE"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8z-47-kG1" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                                                    <rect key="frame" x="188.66666666666666" y="0.0" width="111.33333333333334" height="35"/>
+                                                                    <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="15"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="삭제하기">
+                                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="1vY-pC-NxY" firstAttribute="leading" secondItem="4oQ-OP-lgY" secondAttribute="leading" id="NWg-wm-cYa"/>
+                                                        <constraint firstItem="GP9-cd-LO3" firstAttribute="leading" secondItem="4oQ-OP-lgY" secondAttribute="leading" id="NiI-S9-yO4"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4oQ-OP-lgY" secondAttribute="trailing" constant="10" id="IKa-xS-lvy"/>
+                                                <constraint firstItem="4oQ-OP-lgY" firstAttribute="leading" secondItem="Ukt-fN-SPj" secondAttribute="leadingMargin" constant="10" id="RsP-Cl-ilY"/>
+                                                <constraint firstItem="4oQ-OP-lgY" firstAttribute="centerX" secondItem="Ukt-fN-SPj" secondAttribute="centerX" id="ynj-nI-m4M"/>
+                                                <constraint firstItem="4oQ-OP-lgY" firstAttribute="centerY" secondItem="Ukt-fN-SPj" secondAttribute="centerY" id="yrI-nO-npb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foodCategory" destination="RO3-DX-F7m" id="UBW-X4-TSb"/>
+                                            <outlet property="foodDate" destination="gbx-nA-kfR" id="Pjo-c7-RZl"/>
+                                            <outlet property="foodImage" destination="b2J-i5-KMe" id="XgC-z0-cLu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-o6-S82" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                <rect key="frame" x="232.66666666666663" y="57" width="142.33333333333337" height="60"/>
+                                <color key="backgroundColor" red="0.65098039215686276" green="0.8901960784313725" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="MzM-2b-g7O"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="음식 추가하기🥑">
+                                    <fontDescription key="titleFontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="16"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4DO-FC-PEb" kind="presentation" modalPresentationStyle="fullScreen" id="8tm-2t-oEC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HHp-o6-S82" secondAttribute="trailing" constant="15" id="0oz-hG-vHT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3BW-5L-g9v" secondAttribute="trailing" constant="15" id="Ato-b5-Ayc"/>
+                            <constraint firstItem="3BW-5L-g9v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BM5-1H-Z9G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3BW-5L-g9v" secondAttribute="bottom" constant="75" id="UUV-ph-zE4"/>
+                            <constraint firstItem="HHp-o6-S82" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="ehU-6I-xLu"/>
+                            <constraint firstItem="3BW-5L-g9v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="izw-4E-qoy"/>
+                            <constraint firstItem="HHp-o6-S82" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="nZC-xW-Tra"/>
+                            <constraint firstItem="3BW-5L-g9v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="tWf-nl-8qV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="3BW-5L-g9v" id="yOG-Ss-toF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.38461538461539" y="-64.691943127962077"/>
+        </scene>
+        <!--Plus View Controller-->
+        <scene sceneID="pno-oo-AQ4">
+            <objects>
+                <viewController id="4DO-FC-PEb" customClass="PlusViewController" customModule="TakeCareOfFridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zje-YU-1RH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2022-11-14 오후 4.36.24" translatesAutoresizingMaskIntoConstraints="NO" id="2ha-t9-Vny">
+                                <rect key="frame" x="70" y="147" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Ru6-sd-SJM"/>
+                                    <constraint firstAttribute="height" constant="250" id="w4K-2W-5zn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" role="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="jV3-7X-snW">
+                                <rect key="frame" x="335" y="57" width="40" height="32"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="4DO-FC-PEb" eventType="touchUpInside" id="o88-qW-Hu5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-9z-f4b" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                <rect key="frame" x="120" y="417" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="0cn-72-kVX"/>
+                                    <constraint firstAttribute="height" constant="50" id="hvr-ef-ebY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="음식사진 추가하기🥨">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="foodImageButton:" destination="4DO-FC-PEb" eventType="touchUpInside" id="Jjn-Oe-Dv1"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pPF-fq-hev">
+                                <rect key="frame" x="20" y="554.66666666666663" width="350" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-tx-tJa" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="100"/>
+                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="EpK-ng-4y9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
+                                        <menu key="menu" id="wkJ-bO-zrZ">
+                                            <children>
+                                                <command title="Item 1" id="lIX-z7-KkZ"/>
+                                                <command title="Item 2" id="EBh-KD-E9U"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="rSX-Zu-Jyd">
+                                        <rect key="frame" x="198" y="0.0" width="152" height="100"/>
+                                        <locale key="locale" localeIdentifier="ko_KR"/>
+                                        <connections>
+                                            <action selector="foodDate:" destination="4DO-FC-PEb" eventType="valueChanged" id="20V-I7-yPb"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="89y-pm-TYU"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wE0-JA-HTz" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                <rect key="frame" x="120" y="742" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Cp5-5X-sBr"/>
+                                    <constraint firstAttribute="height" constant="50" id="po5-Bc-Qqo"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="음식 저장하기!">
+                                    <fontDescription key="titleFontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="15"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveFood:" destination="4DO-FC-PEb" eventType="touchUpInside" id="HOJ-DP-NYA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wS9-VD-Sap"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2ha-t9-Vny" firstAttribute="centerX" secondItem="Zje-YU-1RH" secondAttribute="centerX" id="69I-OS-YDc"/>
+                            <constraint firstItem="pPF-fq-hev" firstAttribute="centerX" secondItem="Zje-YU-1RH" secondAttribute="centerX" id="6DF-CV-PlJ"/>
+                            <constraint firstItem="zvQ-9z-f4b" firstAttribute="top" secondItem="2ha-t9-Vny" secondAttribute="bottom" constant="20" id="J7i-lN-DgU"/>
+                            <constraint firstItem="jV3-7X-snW" firstAttribute="top" secondItem="wS9-VD-Sap" secondAttribute="top" constant="10" id="OFm-hJ-kZd"/>
+                            <constraint firstItem="wS9-VD-Sap" firstAttribute="trailing" secondItem="jV3-7X-snW" secondAttribute="trailing" constant="15" id="OLf-5e-1gg"/>
+                            <constraint firstItem="wE0-JA-HTz" firstAttribute="centerX" secondItem="Zje-YU-1RH" secondAttribute="centerX" id="cu9-J7-Gzg"/>
+                            <constraint firstItem="pPF-fq-hev" firstAttribute="leading" secondItem="wS9-VD-Sap" secondAttribute="leading" constant="20" id="h02-FD-TXF"/>
+                            <constraint firstItem="2ha-t9-Vny" firstAttribute="top" secondItem="wS9-VD-Sap" secondAttribute="top" constant="100" id="iKv-iY-69R"/>
+                            <constraint firstItem="pPF-fq-hev" firstAttribute="top" secondItem="zvQ-9z-f4b" secondAttribute="bottom" constant="87.5" id="nRE-CB-wpH"/>
+                            <constraint firstItem="zvQ-9z-f4b" firstAttribute="centerX" secondItem="Zje-YU-1RH" secondAttribute="centerX" id="pLf-kS-H96"/>
+                            <constraint firstItem="wS9-VD-Sap" firstAttribute="trailing" secondItem="pPF-fq-hev" secondAttribute="trailing" constant="20" id="rwq-H1-VTJ"/>
+                            <constraint firstItem="wE0-JA-HTz" firstAttribute="top" secondItem="pPF-fq-hev" secondAttribute="bottom" constant="87.5" id="yQQ-fQ-Azq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodCategoryButton" destination="ZCT-tx-tJa" id="VIQ-KL-kE1"/>
+                        <outlet property="foodImage" destination="2ha-t9-Vny" id="ItF-38-8ZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5gr-tr-7C2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616.92307692307691" y="-65.402843601895725"/>
+        </scene>
+        <!--Update View Controller-->
+        <scene sceneID="IXq-dg-jYK">
+            <objects>
+                <viewController id="6vk-Zg-y9j" customClass="UpdateViewController" customModule="TakeCareOfFridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LdJ-qm-81J">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2022-11-14 오후 4.36.24" translatesAutoresizingMaskIntoConstraints="NO" id="CDS-VC-mfW">
+                                <rect key="frame" x="70" y="147" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9hW-V6-9GP"/>
+                                    <constraint firstAttribute="height" constant="250" id="U0I-n4-XAG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" role="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="wm8-Xj-faN">
+                                <rect key="frame" x="335" y="57" width="40" height="32"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="6vk-Zg-y9j" eventType="touchUpInside" id="iOX-yq-LKv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkj-Kd-CNv" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                <rect key="frame" x="120" y="417" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Zly-Jo-nG6"/>
+                                    <constraint firstAttribute="height" constant="50" id="wKj-WS-7Ca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="음식사진 추가하기🥨">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="foodImageButton:" destination="6vk-Zg-y9j" eventType="touchUpInside" id="yea-12-TDk"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7t9-wm-ra8">
+                                <rect key="frame" x="20" y="554.66666666666663" width="350" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCv-k4-yVn" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="100"/>
+                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="190" id="33d-qa-qoI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="20"/>
+                                        <menu key="menu" id="DDh-e9-7sl">
+                                            <children>
+                                                <command title="Item 1" id="fe6-nU-Ze6"/>
+                                                <command title="Item 2" id="vcC-Bv-uOn"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="eH5-fA-e1u">
+                                        <rect key="frame" x="198" y="0.0" width="152" height="100"/>
+                                        <locale key="locale" localeIdentifier="ko_KR"/>
+                                        <connections>
+                                            <action selector="foodDate:" destination="6vk-Zg-y9j" eventType="valueChanged" id="LCI-YD-BNe"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="yvg-dp-n2O"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39N-fX-hLv" customClass="RoundButton" customModule="TakeCareOfFridge" customModuleProvider="target">
+                                <rect key="frame" x="120" y="742" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fKM-OM-fCs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="j40-Li-4wn"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="음식 수정하기!">
+                                    <fontDescription key="titleFontDescription" name="BMDoHyeon-OTF" family="BM DoHyeon OTF" pointSize="15"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateFood:" destination="6vk-Zg-y9j" eventType="touchUpInside" id="lEg-2b-zef"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SPc-ML-yS1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wm8-Xj-faN" firstAttribute="top" secondItem="SPc-ML-yS1" secondAttribute="top" constant="10" id="1JR-hN-5WZ"/>
+                            <constraint firstItem="CDS-VC-mfW" firstAttribute="centerX" secondItem="LdJ-qm-81J" secondAttribute="centerX" id="57j-mc-yKV"/>
+                            <constraint firstItem="7t9-wm-ra8" firstAttribute="centerX" secondItem="LdJ-qm-81J" secondAttribute="centerX" id="5RO-Rm-2BJ"/>
+                            <constraint firstItem="SPc-ML-yS1" firstAttribute="trailing" secondItem="wm8-Xj-faN" secondAttribute="trailing" constant="15" id="Brg-Cl-aqE"/>
+                            <constraint firstItem="39N-fX-hLv" firstAttribute="top" secondItem="7t9-wm-ra8" secondAttribute="bottom" constant="87.5" id="KOR-AF-uNz"/>
+                            <constraint firstItem="Lkj-Kd-CNv" firstAttribute="centerX" secondItem="LdJ-qm-81J" secondAttribute="centerX" id="XlC-xM-My5"/>
+                            <constraint firstItem="39N-fX-hLv" firstAttribute="centerX" secondItem="LdJ-qm-81J" secondAttribute="centerX" id="dN0-f4-g7w"/>
+                            <constraint firstItem="Lkj-Kd-CNv" firstAttribute="top" secondItem="CDS-VC-mfW" secondAttribute="bottom" constant="20" id="f0l-t0-bjT"/>
+                            <constraint firstItem="7t9-wm-ra8" firstAttribute="top" secondItem="Lkj-Kd-CNv" secondAttribute="bottom" constant="87.5" id="lgc-nd-a9t"/>
+                            <constraint firstItem="7t9-wm-ra8" firstAttribute="leading" secondItem="SPc-ML-yS1" secondAttribute="leading" constant="20" id="pwS-6W-giL"/>
+                            <constraint firstItem="SPc-ML-yS1" firstAttribute="trailing" secondItem="7t9-wm-ra8" secondAttribute="trailing" constant="20" id="ybq-hf-vYh"/>
+                            <constraint firstItem="CDS-VC-mfW" firstAttribute="top" secondItem="SPc-ML-yS1" secondAttribute="top" constant="100" id="yvX-Fn-jWQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodCategoryButton" destination="QCv-k4-yVn" id="cvI-aX-Wi8"/>
+                        <outlet property="foodImage" destination="CDS-VC-mfW" id="JZQ-Eb-2OW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Xe-Ll-mbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135" y="653"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="39N-fX-hLv">
+            <size key="intrinsicContentSize" width="121" height="32"/>
+        </designable>
+        <designable name="H8z-47-kG1">
+            <size key="intrinsicContentSize" width="58" height="30"/>
+        </designable>
+        <designable name="HHp-o6-S82">
+            <size key="intrinsicContentSize" width="142.33333333333334" height="33.333333333333336"/>
+        </designable>
+        <designable name="Lkj-Kd-CNv">
+            <size key="intrinsicContentSize" width="140" height="30"/>
+        </designable>
+        <designable name="QCv-k4-yVn">
+            <size key="intrinsicContentSize" width="63" height="36"/>
+        </designable>
+        <designable name="ZCT-tx-tJa">
+            <size key="intrinsicContentSize" width="63" height="36"/>
+        </designable>
+        <designable name="hf0-EO-bce">
+            <size key="intrinsicContentSize" width="58" height="30"/>
+        </designable>
+        <designable name="wE0-JA-HTz">
+            <size key="intrinsicContentSize" width="121" height="32"/>
+        </designable>
+        <designable name="zvQ-9z-f4b">
+            <size key="intrinsicContentSize" width="140" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="스크린샷 2022-11-14 오후 4.36.24" width="187" height="197"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

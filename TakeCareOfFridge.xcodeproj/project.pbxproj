@@ -17,6 +17,9 @@
 		7669E6ED29221C89002F6D73 /* BMDOHYEON_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7669E6EC29221C71002F6D73 /* BMDOHYEON_otf.otf */; };
 		7669E6EF29221F82002F6D73 /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669E6EE29221F82002F6D73 /* PlusViewController.swift */; };
 		7669E6F329225F24002F6D73 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669E6F229225F24002F6D73 /* RoundButton.swift */; };
+		766AE2432930A4A800A14A3E /* FoodManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766AE2422930A4A800A14A3E /* FoodManager.swift */; };
+		766AE2452930A4E400A14A3E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766AE2442930A4E400A14A3E /* Food.swift */; };
+		766AE24C2930AACB00A14A3E /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766AE24B2930AACB00A14A3E /* UpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		7669E6EC29221C71002F6D73 /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
 		7669E6EE29221F82002F6D73 /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
 		7669E6F229225F24002F6D73 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		766AE2422930A4A800A14A3E /* FoodManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodManager.swift; sourceTree = "<group>"; };
+		766AE2442930A4E400A14A3E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		766AE24B2930AACB00A14A3E /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +72,44 @@
 			children = (
 				7669E6D629221699002F6D73 /* AppDelegate.swift */,
 				7669E6D829221699002F6D73 /* SceneDelegate.swift */,
-				7669E6F229225F24002F6D73 /* RoundButton.swift */,
-				7669E6DA29221699002F6D73 /* ViewController.swift */,
-				7669E6EE29221F82002F6D73 /* PlusViewController.swift */,
-				7669E6EA29221992002F6D73 /* TableViewCell.swift */,
+				766AE2482930A87F00A14A3E /* Models */,
+				766AE2472930A87900A14A3E /* Views */,
+				766AE2462930A87100A14A3E /* Controllers */,
 				7669E6EC29221C71002F6D73 /* BMDOHYEON_otf.otf */,
-				7669E6DC29221699002F6D73 /* Main.storyboard */,
 				7669E6DF2922169A002F6D73 /* Assets.xcassets */,
 				7669E6E12922169A002F6D73 /* LaunchScreen.storyboard */,
 				7669E6E42922169A002F6D73 /* Info.plist */,
 			);
 			path = TakeCareOfFridge;
+			sourceTree = "<group>";
+		};
+		766AE2462930A87100A14A3E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7669E6DA29221699002F6D73 /* ViewController.swift */,
+				7669E6EE29221F82002F6D73 /* PlusViewController.swift */,
+				766AE24B2930AACB00A14A3E /* UpdateViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		766AE2472930A87900A14A3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7669E6DC29221699002F6D73 /* Main.storyboard */,
+				7669E6EA29221992002F6D73 /* TableViewCell.swift */,
+				7669E6F229225F24002F6D73 /* RoundButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		766AE2482930A87F00A14A3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				766AE2442930A4E400A14A3E /* Food.swift */,
+				766AE2422930A4A800A14A3E /* FoodManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7669E6F329225F24002F6D73 /* RoundButton.swift in Sources */,
+				766AE2432930A4A800A14A3E /* FoodManager.swift in Sources */,
+				766AE24C2930AACB00A14A3E /* UpdateViewController.swift in Sources */,
 				7669E6DB29221699002F6D73 /* ViewController.swift in Sources */,
 				7669E6EF29221F82002F6D73 /* PlusViewController.swift in Sources */,
 				7669E6EB29221992002F6D73 /* TableViewCell.swift in Sources */,
+				766AE2452930A4E400A14A3E /* Food.swift in Sources */,
 				7669E6D729221699002F6D73 /* AppDelegate.swift in Sources */,
 				7669E6D929221699002F6D73 /* SceneDelegate.swift in Sources */,
 			);
